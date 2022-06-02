@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Listings</title>
+  <link rel="stylesheet" href="../css/listing.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="navbox">
+      <a href="index.html">Home</a>
+      <ul>
+        <li>(Not you?) Log In</li>
+        <li>Properties</li>
+        <Li>Listings</Li>
+      </ul>
+    </div>
+  </header>
+  <h1 id="mainHeader">
+    Properties
+  </h1>
+  <button id="openAddProperties">Add Property</button>
+  <button id="removeProperties">Remove Property</button>
+  <hr id="firstLineBreak">
+  <div class="popUpBox" id="boxContainer">
+    <div class="boxContent">
+      <h3 class="popUpTitle">Property</h3>
+      <span class="closeBox">&times;</span>
+      <form>
+        <label for="nameInput">Address</label><br>
+        <input type="text" id="propAddress" placeholder="Address"><br>
+
+        <label for="nameInput">Neighborhood</label><br>
+        <input type="text" id="propHood" placeholder="Neighborhood"><br>
+
+        <label for="nameInput">Sq.Ft</label><br>
+        <input type="text" id="sqFT" placeholder="sq. ft"><br>
+
+        <label for="nameInput">Garage</label><br>
+        <select name="garage" id="propGarage">
+          <option value="Yes" id="yesGarage" value="garage">Yes</option>
+          <option value="No" id="noGarage" value="garage">No</option>
+        </select><br>
+
+        <label for="nameInput">Local Transportation</label><br>
+        <select name="garage" id="propTransport">Garage
+          <option value="Yes" id="yesGarage" value="yesGarage">Yes</option>
+          <option value="No" id="noGarage" value="noGarage">No</option>
+        </select><br>
+        <input type="button" value="Add Property" onclick="storeProperty();" />
+        <div class="propConfirmation"></div>
+      </div>
+  </form>
+  </div>
+
+  <div id="propertySection"></div>
+  <script src="../js/index.js"></script>
+</body>
+</html>

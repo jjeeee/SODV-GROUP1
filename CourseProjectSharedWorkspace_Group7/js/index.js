@@ -13,7 +13,13 @@ function addUser(){
 
   alert("Signed in as " + storeUserInfo.name + ". Redirecting shortly.");
   //Opens in the same window
-  window.location.replace("propertylistings.html");
+  if($('#userRole').val() == "Owner"){
+    window.location.replace("propertylistings.html");
+    //
+  }
+  else{
+    window.location.replace("sike.html"); // Insert co-workers site here-------------------------------------------
+  }
 }
 
 //-----Listing JS ------//

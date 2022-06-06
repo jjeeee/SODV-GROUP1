@@ -2,6 +2,20 @@
   margin: 0;
   padding: 0;
 }
+
+header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 body{
   min-height: 100%;
   background: linear-gradient(to left top, white, rgb(35, 51, 51));
@@ -15,6 +29,7 @@ body{
   left: 20%;
   font-size: 60px;
 }
+
 .inputBox{
   border: 1px solid gray;
   border-radius: 10px;
@@ -32,19 +47,33 @@ form{
   align-items: center;
   justify-content: center;
 }
+
 form div{
   padding: 10px;
 }
+
 form div input{
   padding: 1%;
   width: 90%;
   margin-top:1.5%;
 }
+
 form div select{
   margin-top: 1.5%;
 }
+
 form div button{
   padding: 1%;
   margin-top: 2%;
   width: 30%;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  font-size: 1rem;
+  font-style: bold;
+  color: black;
+  width: 100%;
+  text-align: center;
 }
